@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links li a.active {
+    color: #f39c12; /* Matches hover color for visual consistency */
+    /*font-weight: bold; /* Optional for better emphasis */
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .nav-links li a:hover {
+            color: #f39c12;
+        }
+
+.nav-btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+    .nav-btn:hover {
+        background: #d35400;
+    }
+/* General Styling for Contact Page */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/hPyDcRgb/IMG-1653.jpg") no-repeat center center/cover;
+    padding: 80px 20px;
+    color: #fff;
+    min-height: 100vh;
+}
+
+    .contact h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #f39c12;
+    }
+
+    .contact p {
+        font-size: 1.2em;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+.instagram-embed {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Add styles for mobile responsiveness if needed */
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 15px;
+    }
+
+        .contact h1 {
+            font-size: 2em;
+        }
+
+        .contact p {
+            font-size: 1.1em;
+        }
+}

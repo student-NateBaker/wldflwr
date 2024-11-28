@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links li a.active {
+    color: #f39c12; /* Matches hover color for visual consistency */
+    /*font-weight: bold; /* Optional for better emphasis */
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .nav-links li a:hover {
+            color: #f39c12;
+        }
+
+.nav-btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+    .nav-btn:hover {
+        background: #d35400;
+    }
+
+.about {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-around; /* Creates space between the image and text */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://i.postimg.cc/DytbW9Lq/paint.png') no-repeat center center/cover;
+    padding: 80px 20px;
+    color: #fff;
+    min-height: 100vh;
+}
+
+    .about .image-container {
+        flex: 1; /* Allows the image to take up 1 part of the available space */
+        display: flex;
+        justify-content: center; /* Centers the image horizontally */
+    }
+
+        .about .image-container img {
+            width: 80%; /* Adjust as needed */
+            max-width: 400px; /* Prevents the image from growing too large */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+    .about .text-container {
+        flex: 1; /* Allows the text to take up 1 part of the available space */
+        padding: 20px;
+        text-align: left;
+    }
+
+    .about h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .about p {
+        font-size: 1.2em;
+        line-height: 1.8;
+    }
